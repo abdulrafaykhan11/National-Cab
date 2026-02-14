@@ -313,3 +313,77 @@ nav {
   object-fit: cover;
   object-position: center;
 }
+/* Card Container */
+.taxi-card {
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: 0.4s ease;
+    border-radius: 5px;
+}
+
+/* Image styling - Height badha di gayi hai */
+.taxi-card img {
+    width: 100%;
+    height: 380px; 
+    object-fit: cover;
+    display: block;
+    transition: 0.6s ease;
+}
+
+/* Shape Box - Isko upar pull kiya gaya hai */
+.content-box {
+    position: relative;
+    margin-top: -130px; /* Shape ko image ke upar laane ke liye */
+    background: white;
+    padding: 60px 25px 30px 25px; /* Top padding shape ke cut ko balance karti hai */
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+    transition: all 0.4s ease;
+    z-index: 2;
+}
+
+.content-box h4 {
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: #333;
+    transition: 0.3s;
+}
+
+.content-box p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.6;
+    transition: 0.3s;
+}
+
+.read-more {
+    color: #e74c3c;
+    text-decoration: none !important;
+    font-weight: bold;
+    display: block;
+    margin-top: 20px;
+    text-align: right;
+    transition: 0.3s;
+    font-size: 0.85rem;
+}
+
+/* --- HOVER EFFECTS --- */
+
+/* Hover par background Red hoga */
+.taxi-card:hover .content-box {
+    background: #e74c3c;
+}
+
+/* Hover par text White hoga */
+.taxi-card:hover h4, 
+.taxi-card:hover p, 
+.taxi-card:hover .read-more {
+    color: #ffffff;
+}
+
+/* Hover par image thodi zoom hogi */
+.taxi-card:hover img {
+    transform: scale(1.05);
+}
