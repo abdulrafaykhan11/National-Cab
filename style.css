@@ -246,7 +246,7 @@ nav {
 .carousel-item.active p {
   animation: fadeInUp 0.8s ease-out 0.3s both;
 }
-nav.scrolled {
+.nav.scrolled {
   position: fixed;
   top: 0;
   width: 100%;
@@ -255,6 +255,52 @@ nav.scrolled {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: 4s cubic-bezier(0.19, 1, 0.22, 1);
 }
-.m{
-    margin-bottom: 60rem;
+
+/* Hero Section Buttons */
+.herp-btn {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.herp-btn button {
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+/* Purchase Button (Red) */
+.herp-btn .btn-danger {
+  background-color: rgb(204, 36, 36);
+  color: white;
+  border-color: rgb(204, 36, 36);
+}
+
+.herp-btn .btn-danger:hover {
+  background-color: transparent;
+  color: white;
+  border-color: white;
+}
+
+/* See More Button (Transparent/White) */
+.herp-btn button:not(.btn-danger) {
+  background-color: transparent;
+  color: white;
+  border-color: white;
+}
+
+.herp-btn button:not(.btn-danger):hover {
+  background-color: white;
+  color: rgb(204, 36, 36);
+  border-color: white;
+}
+.m {
+  margin-bottom: 60rem;
 }
