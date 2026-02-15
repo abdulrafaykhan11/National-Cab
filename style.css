@@ -524,3 +524,149 @@ height: 70vh;
 .btn-p{
   font-size: x-small;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+/* Header Style */
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header h2 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #333;
+}
+
+.line {
+    width: 150px;
+    height: 1px;
+    background: #ccc;
+    margin: 10px auto;
+    position: relative;
+}
+
+.line span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #333;
+    position: absolute;
+    top: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Driver Card */
+.driver-card {
+    width: 230px;
+    margin: 5px;
+    background: #f0f0f0; /* Default background */
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.image-box {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Content Area */
+.content {
+    padding: 15px 10px;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+.top-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.top-info strong {
+    font-size: 13px;
+    color: #222;
+}
+
+.role {
+    font-size: 11px;
+    color: #777;
+}
+
+.bottom-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill {
+    font-size: 11px;
+    font-weight: bold;
+    color: #444;
+}
+
+.stars {
+    color: #f39c12;
+    font-size: 12px;
+}
+
+/* --- HOVER EFFECT --- */
+.driver-card:hover .content {
+    background-color: #ffcc00; /* Yellow background on hover */
+}
+
+/* Hiring Card Specifics */
+.hiring-card .hire-bg {
+    background-color: #dcdcdc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hiring-icon {
+    width: 80px !important;
+    height: auto !important;
+    opacity: 0.6;
+}
+
+.hiring-text {
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    padding: 10px 0;
+}
+.drivers-section{
+  background-color: rgb(245, 240, 240);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
