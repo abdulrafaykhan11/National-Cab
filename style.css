@@ -670,3 +670,25 @@ body {
   margin-bottom: 2rem;
   padding: 2rem;
 }
+#customer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(25, 16, 16, 0.603)) , url("	https://demoxml.com/html/taxicab/images/testimonial/testimonial.jpg");
+  background-size: cover;
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 2rem;
+}
+#customer h1{
+  color: white;
+}
+#customer p{
+  color: white;
+  text-align: center;
+}
+#customer h3{
+  color: white;
+}
