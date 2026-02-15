@@ -483,3 +483,44 @@ nav {
 .date-time-group span {
   font-weight: bold;
 }
+.col-md-5 img{
+height: 70vh;
+    padding: 18px;
+    margin-left: -113px;
+}
+.content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.content h6{
+  font-weight: bold;
+  font-size: xx-small;
+}
+.content p{
+  font-size: xx-small;
+  margin-left: 0.9rem;
+}
+.content a{
+  text-decoration: none;
+  color: red;
+  font-size: x-small;
+}
+.wishes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wish-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+.btn-p{
+  font-size: x-small;
+}
