@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>National Cab</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="https://demoxml.com/html/taxicab/images/logo.png" alt="" />
+        <div class="logo-text">
+          <h1>National Cab</h1>
+          <span class="tagline">Always There For You</span>
+        </div>
+      </div>
+      <div class="info">
+        <div class="location">
+          <img
+            src="https://demoxml.com/html/taxicab/images/icon/location-ic.png"
+            alt=""
+          />'
+          <div class="location-text">
+            <p>A12 - Design Street, <br />Omaha, United States</p>
+          </div>
+        </div>
+        <div class="phone">
+          <img
+            src="https://demoxml.com/html/taxicab/images/icon/phone-ic.png"
+            alt=""
+          />
+          <div class="phone-text">
+            <p>
+              CALL US ANYTIME <br />
+              <span class="tagline"> +123 456 7890 </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav>
+      <div class="links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="faq.html" class="active">FAQS</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </div>
+      <div class="button">
+        <button class="btn-danger">Book For A Ride</button>
+      </div>
+    </nav>
+
+    <section class="faq-section py-5">
+      <div class="container">
+        <div class="header">
+          <h2>FREQUENTLY ASKED QUESTIONS</h2>
+          <div class="line"><span></span></div>
+        </div>
+
+        <div class="accordion" id="faqAccordion">
+          <!-- Question 1 -->
+          <div class="accordion-item mb-3 border-0 shadow-sm">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                How do I book a taxi?
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body text-muted">
+                You can book a taxi through our website by filling out the
+                booking form, or by downloading our mobile app. You can also
+                call our customer support hotline for immediate assistance.
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 2 -->
+          <div class="accordion-item mb-3 border-0 shadow-sm">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                What are the payment methods?
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body text-muted">
+                We accept cash, credit cards (Visa, MasterCard), and mobile
+                payments. You can select your preferred payment method during
+                the booking process.
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 3 -->
+          <div class="accordion-item mb-3 border-0 shadow-sm">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Can I cancel my booking?
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body text-muted">
+                Yes, you can cancel your booking up to 1 hour before the
+                scheduled pickup time without any cancellation fee. Please use
+                the app or contact support to proceed with cancellation.
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 4 -->
+          <div class="accordion-item mb-3 border-0 shadow-sm">
+            <h2 class="accordion-header" id="headingFour">
+              <button
+                class="accordion-button collapsed fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                Do you offer airport transfer services?
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFour"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body text-muted">
+                Yes, we specialize in airport transfers. We monitor flight
+                schedules to ensure our drivers are there when you arrive, even
+                if your flight is delayed.
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 5 -->
+          <div class="accordion-item mb-3 border-0 shadow-sm">
+            <h2 class="accordion-header" id="headingFive">
+              <button
+                class="accordion-button collapsed fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+                Is there a lost and found service?
+              </button>
+            </h2>
+            <div
+              id="collapseFive"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFive"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body text-muted">
+                Yes, if you leave something in the taxi, please contact our
+                customer support immediately with your booking details, and we
+                will help you retrieve your item.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="checkered-top"></div>
+
+      <div class="footer-container">
+        <div class="footer-col subscribe-box">
+          <div class="box-border">
+            <h3>SUBSCRIBE TO MAIL!</h3>
+            <p>
+              Get our Daily email newsletter with Special Services, Updates,
+              Offers and more
+            </p>
+            <div class="subscribe-form">
+              <input type="email" placeholder="EMAIL ADDRESS" />
+              <button type="submit">SIGNUP</button>
+            </div>
+          </div>
+          <div class="social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+            <a href="#"><i class="fa fa-tumblr"></i></a>
+            <a href="#"><i class="fa fa-dribbble"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>WE GLAD TO OFFER</h3>
+          <ul class="offer-list">
+            <li>24 / 7 Taxi Service To Any Where Around The City</li>
+            <li>Sending Taxi Booking Alert By SMS</li>
+            <li>GPS Tracking System For Location Guessing</li>
+            <li>Instant Printed Bills In Car On Departure</li>
+            <li>Magazine And News Papers For Reading On Ride</li>
+            <li>Credit And Debit Card Payment Available</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>ABOUT US</h3>
+          <p class="about-text">
+            Hello we are Comre. We are here to provide you the best offers
+            through our coupons. Hello we are We are here to provide you
+            coupons.
+          </p>
+          <div class="contact-info">
+            <div class="info-item">
+              <i class="fa fa-map-marker"></i>
+              <span>A12 - Design Street,<br />Omaha, United States</span>
+            </div>
+            <div class="info-item">
+              <i class="fa fa-mobile"></i>
+              <span
+                >Customer Support :<br /><strong>+124 45 76 678</strong></span
+              >
+            </div>
+            <div class="info-item">
+              <i class="fa fa-envelope-o"></i>
+              <span>Email :<br /><strong>mail@NationalCab.com</strong></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="bottom-links">
+          <a href="#">FAQ</a> | <a href="#">NEWS</a> |
+          <a href="#">CLIENT SUPPORT</a>
+        </div>
+        <div class="copyright">
+          COPYRIGHTS © 2015 NATIONAL CAB. ALL RIGHTS RESERVED
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="script.js"></script>
+</html>
